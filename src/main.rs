@@ -27,7 +27,6 @@ fn main() {
         println!("Value for sensor 500000: {}", value);
     }
 
-    // Performance comparisons would depend on actual benchmarks, but generally, Rust’s performance is comparable to C/C++.
 
     // Example for memory optimization using Box
     let boxed_sensors: Vec<Box<SensorData>> = sensors.into_iter().map(|s| Box::new(s)).collect();
